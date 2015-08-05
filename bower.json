@@ -1,0 +1,20 @@
+{
+  "name": "epsilon-web",
+  "version": "0.1.0",
+  "homepage": "https://github.com/castillobg/epsilon-web",
+  "authors": [
+    "castillobg"
+  ],
+  "description": "A simple Angular app to calculate the machine (or at least, the Javascript engine) epsilon.",
+  "main": "main.js",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-material": "~0.10.0",
+    "ui-router": "~0.2.15"
+  },
+  "keywords": [
+    "epsilon",
+    "angular"
+  ],
+  "license": "MIT"
+}

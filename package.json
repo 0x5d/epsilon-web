@@ -1,0 +1,26 @@
+{
+  "name": "epsilon-web",
+  "version": "0.1.0",
+  "description": "'A simple Angular app to calculate the machine (or at least, the Javascript engine) epsilon.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castillobg/epsilon-web.git"
+  },
+  "keywords": [
+    "epsilon",
+    "angular"
+  ],
+  "author": "castillobg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/castillobg/epsilon-web/issues"
+  },
+  "homepage": "https://github.com/castillobg/epsilon-web#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
