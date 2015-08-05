@@ -11,7 +11,7 @@ angular.module('epsilon-web')
 
   self.calculate = function(event){
     self.epsilon = langUtils.machineEpsilon();
-    var message = 'Your browser\'s epsilon is: ' + self.epsilon + '.\n';
+    var message = 'The machine epsilon is: ' + self.epsilon + '.\n';
     $mdDialog.show(
       $mdDialog.alert()
         .parent(angular.element(document.body))
