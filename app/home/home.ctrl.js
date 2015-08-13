@@ -9,9 +9,14 @@ angular.module('epsilon-web')
     300
   );
 
-  self.calculate = function(event){
-    self.epsilon = langUtils.machineEpsilon();
-    var message = 'The machine epsilon is: ' + self.epsilon + '.\n';
+  self.calculate = function(event, radians){
+    if(radians !== '0' && (!radians || !parseInt(radians))){
+      return;
+    }
+    self.res_obj = langUtils.taylorSine(parseInt(radians));
+    var message = 'Taylor\'s sine is: ' + self.res_obj.result + '.\n'
+      + 'Iterations:' + ' ' + self.res_obj.iterations + '.\n'
+      + '\nNative sine result: ' + Math.sin(radians);
     $mdDialog.show(
       $mdDialog.alert()
         .parent(angular.element(document.body))
