@@ -17,7 +17,6 @@ angular.module('epsilon-web')
     while(true){
       var index = 2 * i + 1;
       partialRes += (Math.pow(-1, i) * Math.pow(x, index)) / factorial(index);
-      // if(Math.abs(partialRes - res) < 0.0000001){
       if(partialRes === res){
         break;
       }
