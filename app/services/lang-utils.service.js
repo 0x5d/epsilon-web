@@ -11,6 +11,11 @@ angular.module('epsilon-web')
   }
 
   function taylorSine(x){
+    var factor = x < 0 ? -1 : 1;
+    x = Math.abs(x);
+    while(!(x >= 0 && x <= 2 * Math.PI)){
+      x -= 2 * Math.PI;
+    }
     var partialRes = x;
     var res = x;
     var i = 1;
@@ -23,7 +28,7 @@ angular.module('epsilon-web')
       res = partialRes;
       i++;
     }
-    return {result: res, iterations: i + 1};
+    return {result: res * factor, iterations: i + 1};
   }
 
   function factorial(x){

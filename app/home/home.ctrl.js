@@ -10,10 +10,10 @@ angular.module('epsilon-web')
   );
 
   self.calculate = function(event, radians){
-    if(radians !== '0' && (!radians || !parseInt(radians))){
+    if(radians !== '0' && (!radians || !parseFloat(radians))){
       return;
     }
-    self.res_obj = langUtils.taylorSine(parseInt(radians));
+    self.res_obj = langUtils.taylorSine(parseFloat(radians));
     var message = 'Taylor\'s sine is: ' + self.res_obj.result + '.\n'
       + 'Iterations:' + ' ' + self.res_obj.iterations + '.\n'
       + '\nNative sine result: ' + Math.sin(radians);
